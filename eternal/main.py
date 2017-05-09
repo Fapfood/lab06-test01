@@ -1,5 +1,6 @@
 import sys
 import argparse
+import datetime
 
 
 def calculate(year, month, day):
@@ -10,7 +11,7 @@ def calculate(year, month, day):
     :param day:
     :return:
     """
-    return year + month + day
+    return datetime.date(year, month, day).weekday()
 
 
 def main(args):
